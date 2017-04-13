@@ -11,4 +11,5 @@ yum install -y puppet-agent
 
 cp /vagrant/puppet/puppet.conf /etc/puppetlabs/puppet/
 
+PATH=/opt/puppetlabs/bin:$PATH;export PATH
 puppet agent --test
