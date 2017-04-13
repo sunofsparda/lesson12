@@ -1,5 +1,5 @@
 #!/bin/bash
-grep -q -F '192.168.100.101 puppet-server' /etc/hosts || echo '192.168.100.101 puppet-server' >> /etc/hosts
+grep -q -F '192.168.100.101 puppet-server' /etc/hosts || echo '192.168.100.101 puppet-server.minsk.epam.com' >> /etc/hosts
 
 yum install -y epel-release
 
