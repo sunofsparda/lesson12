@@ -11,10 +11,6 @@ Vagrant.configure("2") do |config|
       svr_puppet.vm.provider :virtualbox do |vbox|
          vbox.customize ["modifyvm", :id, "--memory", "4096"]
       end
-      svr_puppet.vm.provision "shell", inline: <<-SHELL
-        grep puppet /etc/hosts
-        [ $? -ne 0 ] && echo "192.168.100.102 puppet-node1" >> /etc/hosts
-      SHELL
       svr_puppet.vm.provision "shell", path: "dev_provision.sh"
     end
 
@@ -25,10 +21,6 @@ Vagrant.configure("2") do |config|
       node_puppet.vm.provider :virtualbox do |vbox|
         vbox.customize ["modifyvm", :id, "--memory", "2048"]
       end  
-      node_puppet.vm.provision "shell", inline: <<-SHELL
-        grep puppet /etc/hosts
-        [ $? -ne 0 ] && echo "192.168.100.101 puppet-server" >> /etc/hosts
-      SHELL
       node_puppet.vm.provision "shell", path: "node_provision.sh"
     end
 
