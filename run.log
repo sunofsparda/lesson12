@@ -1,0 +1,871 @@
+Bringing machine 'svr' up with 'virtualbox' provider...
+Bringing machine 'node1' up with 'virtualbox' provider...
+==> svr: Importing base box 'centos/7'...
+[KProgress: 20%[KProgress: 40%[KProgress: 70%[KProgress: 90%[K==> svr: Matching MAC address for NAT networking...
+==> svr: Checking if box 'centos/7' is up to date...
+==> svr: A newer version of the box 'centos/7' is available! You currently
+==> svr: have version '1702.01'. The latest is version '1703.01'. Run
+==> svr: `vagrant box update` to update.
+==> svr: Setting the name of the VM: lesson12_svr_1492118713553_44902
+==> svr: Fixed port collision for 22 => 2222. Now on port 2200.
+==> svr: Clearing any previously set network interfaces...
+==> svr: Preparing network interfaces based on configuration...
+    svr: Adapter 1: nat
+    svr: Adapter 2: hostonly
+==> svr: Forwarding ports...
+    svr: 22 (guest) => 2200 (host) (adapter 1)
+==> svr: Running 'pre-boot' VM customizations...
+==> svr: Booting VM...
+==> svr: Waiting for machine to boot. This may take a few minutes...
+    svr: SSH address: 127.0.0.1:2200
+    svr: SSH username: vagrant
+    svr: SSH auth method: private key
+    svr: Warning: Remote connection disconnect. Retrying...
+    svr: Warning: Remote connection disconnect. Retrying...
+    svr: Warning: Remote connection disconnect. Retrying...
+    svr: 
+    svr: Vagrant insecure key detected. Vagrant will automatically replace
+    svr: this with a newly generated keypair for better security.
+    svr: 
+    svr: Inserting generated public key within guest...
+    svr: Removing insecure key from the guest if it's present...
+    svr: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> svr: Machine booted and ready!
+[svr] No installation found.
+Loaded plugins: fastestmirror
+Determining fastest mirrors
+ * base: ftp.byfly.by
+ * extras: ftp.byfly.by
+ * updates: ftp.byfly.by
+Package binutils-2.25.1-22.base.el7.x86_64 already installed and latest version
+Package 1:make-3.82-23.el7.x86_64 already installed and latest version
+Package bzip2-1.0.6-13.el7.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package gcc.x86_64 0:4.8.5-11.el7 will be installed
+--> Processing Dependency: cpp = 4.8.5-11.el7 for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: libmpfr.so.4()(64bit) for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: libmpc.so.3()(64bit) for package: gcc-4.8.5-11.el7.x86_64
+---> Package kernel-devel.x86_64 0:3.10.0-514.6.2.el7 will be installed
+---> Package perl.x86_64 4:5.16.3-291.el7 will be installed
+--> Processing Dependency: perl-libs = 4:5.16.3-291.el7 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Scalar::Util) >= 1.10 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl-macros for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl-libs for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(threads::shared) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(threads) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(constant) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Time::Local) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Time::HiRes) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Storable) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Socket) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Scalar::Util) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Pod::Simple::XHTML) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Pod::Simple::Search) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Getopt::Long) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Filter::Util::Call) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Temp) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec::Unix) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec::Functions) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Path) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Exporter) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Cwd) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Carp) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: libperl.so()(64bit) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Running transaction check
+---> Package cpp.x86_64 0:4.8.5-11.el7 will be installed
+---> Package glibc-devel.x86_64 0:2.17-157.el7_3.1 will be installed
+--> Processing Dependency: glibc-headers = 2.17-157.el7_3.1 for package: glibc-devel-2.17-157.el7_3.1.x86_64
+--> Processing Dependency: glibc-headers for package: glibc-devel-2.17-157.el7_3.1.x86_64
+---> Package libmpc.x86_64 0:1.0.1-3.el7 will be installed
+---> Package mpfr.x86_64 0:3.1.1-4.el7 will be installed
+---> Package perl-Carp.noarch 0:1.26-244.el7 will be installed
+---> Package perl-Exporter.noarch 0:5.68-3.el7 will be installed
+---> Package perl-File-Path.noarch 0:2.09-2.el7 will be installed
+---> Package perl-File-Temp.noarch 0:0.23.01-3.el7 will be installed
+---> Package perl-Filter.x86_64 0:1.49-3.el7 will be installed
+---> Package perl-Getopt-Long.noarch 0:2.40-2.el7 will be installed
+--> Processing Dependency: perl(Pod::Usage) >= 1.14 for package: perl-Getopt-Long-2.40-2.el7.noarch
+--> Processing Dependency: perl(Text::ParseWords) for package: perl-Getopt-Long-2.40-2.el7.noarch
+---> Package perl-PathTools.x86_64 0:3.40-5.el7 will be installed
+---> Package perl-Pod-Simple.noarch 1:3.28-4.el7 will be installed
+--> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+--> Processing Dependency: perl(Encode) for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+---> Package perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 will be installed
+---> Package perl-Socket.x86_64 0:2.010-4.el7 will be installed
+---> Package perl-Storable.x86_64 0:2.45-3.el7 will be installed
+---> Package perl-Time-HiRes.x86_64 4:1.9725-3.el7 will be installed
+---> Package perl-Time-Local.noarch 0:1.2300-2.el7 will be installed
+---> Package perl-constant.noarch 0:1.27-2.el7 will be installed
+---> Package perl-libs.x86_64 4:5.16.3-291.el7 will be installed
+---> Package perl-macros.x86_64 4:5.16.3-291.el7 will be installed
+---> Package perl-threads.x86_64 0:1.87-4.el7 will be installed
+---> Package perl-threads-shared.x86_64 0:1.43-6.el7 will be installed
+--> Running transaction check
+---> Package glibc-headers.x86_64 0:2.17-157.el7_3.1 will be installed
+--> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.17-157.el7_3.1.x86_64
+--> Processing Dependency: kernel-headers for package: glibc-headers-2.17-157.el7_3.1.x86_64
+---> Package perl-Encode.x86_64 0:2.51-7.el7 will be installed
+---> Package perl-Pod-Escapes.noarch 1:1.04-291.el7 will be installed
+---> Package perl-Pod-Usage.noarch 0:1.63-3.el7 will be installed
+--> Processing Dependency: perl(Pod::Text) >= 3.15 for package: perl-Pod-Usage-1.63-3.el7.noarch
+--> Processing Dependency: perl-Pod-Perldoc for package: perl-Pod-Usage-1.63-3.el7.noarch
+---> Package perl-Text-ParseWords.noarch 0:3.29-4.el7 will be installed
+--> Running transaction check
+---> Package kernel-headers.x86_64 0:3.10.0-514.16.1.el7 will be installed
+---> Package perl-Pod-Perldoc.noarch 0:3.20-4.el7 will be installed
+--> Processing Dependency: perl(parent) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+--> Processing Dependency: perl(HTTP::Tiny) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+---> Package perl-podlators.noarch 0:2.5.1-3.el7 will be installed
+--> Running transaction check
+---> Package perl-HTTP-Tiny.noarch 0:0.033-3.el7 will be installed
+---> Package perl-parent.noarch 1:0.225-244.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                   Arch      Version                   Repository  Size
+================================================================================
+Installing:
+ gcc                       x86_64    4.8.5-11.el7              base        16 M
+ kernel-devel              x86_64    3.10.0-514.6.2.el7        updates     13 M
+ perl                      x86_64    4:5.16.3-291.el7          base       8.0 M
+Installing for dependencies:
+ cpp                       x86_64    4.8.5-11.el7              base       5.9 M
+ glibc-devel               x86_64    2.17-157.el7_3.1          updates    1.1 M
+ glibc-headers             x86_64    2.17-157.el7_3.1          updates    668 k
+ kernel-headers            x86_64    3.10.0-514.16.1.el7       updates    4.8 M
+ libmpc                    x86_64    1.0.1-3.el7               base        51 k
+ mpfr                      x86_64    3.1.1-4.el7               base       203 k
+ perl-Carp                 noarch    1.26-244.el7              base        19 k
+ perl-Encode               x86_64    2.51-7.el7                base       1.5 M
+ perl-Exporter             noarch    5.68-3.el7                base        28 k
+ perl-File-Path            noarch    2.09-2.el7                base        26 k
+ perl-File-Temp            noarch    0.23.01-3.el7             base        56 k
+ perl-Filter               x86_64    1.49-3.el7                base        76 k
+ perl-Getopt-Long          noarch    2.40-2.el7                base        56 k
+ perl-HTTP-Tiny            noarch    0.033-3.el7               base        38 k
+ perl-PathTools            x86_64    3.40-5.el7                base        82 k
+ perl-Pod-Escapes          noarch    1:1.04-291.el7            base        51 k
+ perl-Pod-Perldoc          noarch    3.20-4.el7                base        87 k
+ perl-Pod-Simple           noarch    1:3.28-4.el7              base       216 k
+ perl-Pod-Usage            noarch    1.63-3.el7                base        27 k
+ perl-Scalar-List-Utils    x86_64    1.27-248.el7              base        36 k
+ perl-Socket               x86_64    2.010-4.el7               base        49 k
+ perl-Storable             x86_64    2.45-3.el7                base        77 k
+ perl-Text-ParseWords      noarch    3.29-4.el7                base        14 k
+ perl-Time-HiRes           x86_64    4:1.9725-3.el7            base        45 k
+ perl-Time-Local           noarch    1.2300-2.el7              base        24 k
+ perl-constant             noarch    1.27-2.el7                base        19 k
+ perl-libs                 x86_64    4:5.16.3-291.el7          base       688 k
+ perl-macros               x86_64    4:5.16.3-291.el7          base        43 k
+ perl-parent               noarch    1:0.225-244.el7           base        12 k
+ perl-podlators            noarch    2.5.1-3.el7               base       112 k
+ perl-threads              x86_64    1.87-4.el7                base        49 k
+ perl-threads-shared       x86_64    1.43-6.el7                base        39 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages (+32 Dependent packages)
+
+Total download size: 53 M
+Installed size: 130 M
+Downloading packages:
+Public key for glibc-headers-2.17-157.el7_3.1.x86_64.rpm is not installed
+warning: /var/cache/yum/x86_64/7/updates/packages/glibc-headers-2.17-157.el7_3.1.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+Public key for libmpc-1.0.1-3.el7.x86_64.rpm is not installed
+--------------------------------------------------------------------------------
+Total                                              6.2 MB/s |  53 MB  00:08     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+Importing GPG key 0xF4A80EB5:
+ Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+ Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+ Package    : centos-release-7-3.1611.el7.centos.x86_64 (@anaconda)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : mpfr-3.1.1-4.el7.x86_64                                     1/35 
+  Installing : libmpc-1.0.1-3.el7.x86_64                                   2/35 
+  Installing : cpp-4.8.5-11.el7.x86_64                                     3/35 
+  Installing : 1:perl-parent-0.225-244.el7.noarch                          4/35 
+  Installing : perl-HTTP-Tiny-0.033-3.el7.noarch                           5/35 
+  Installing : perl-podlators-2.5.1-3.el7.noarch                           6/35 
+  Installing : perl-Pod-Perldoc-3.20-4.el7.noarch                          7/35 
+  Installing : 1:perl-Pod-Escapes-1.04-291.el7.noarch                      8/35 
+  Installing : perl-Encode-2.51-7.el7.x86_64                               9/35 
+  Installing : perl-Text-ParseWords-3.29-4.el7.noarch                     10/35 
+  Installing : perl-Pod-Usage-1.63-3.el7.noarch                           11/35 
+  Installing : perl-threads-1.87-4.el7.x86_64                             12/35 
+  Installing : perl-Storable-2.45-3.el7.x86_64                            13/35 
+  Installing : perl-Exporter-5.68-3.el7.noarch                            14/35 
+  Installing : perl-constant-1.27-2.el7.noarch                            15/35 
+  Installing : perl-Time-Local-1.2300-2.el7.noarch                        16/35 
+  Installing : perl-Socket-2.010-4.el7.x86_64                             17/35 
+  Installing : perl-Carp-1.26-244.el7.noarch                              18/35 
+  Installing : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      19/35 
+  Installing : perl-threads-shared-1.43-6.el7.x86_64                      20/35 
+  Installing : perl-PathTools-3.40-5.el7.x86_64                           21/35 
+  Installing : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 22/35 
+  Installing : 4:perl-libs-5.16.3-291.el7.x86_64                          23/35 
+  Installing : 4:perl-macros-5.16.3-291.el7.x86_64                        24/35 
+  Installing : 1:perl-Pod-Simple-3.28-4.el7.noarch                        25/35 
+  Installing : perl-File-Temp-0.23.01-3.el7.noarch                        26/35 
+  Installing : perl-File-Path-2.09-2.el7.noarch                           27/35 
+  Installing : perl-Filter-1.49-3.el7.x86_64                              28/35 
+  Installing : perl-Getopt-Long-2.40-2.el7.noarch                         29/35 
+  Installing : 4:perl-5.16.3-291.el7.x86_64                               30/35 
+  Installing : kernel-headers-3.10.0-514.16.1.el7.x86_64                  31/35 
+  Installing : glibc-headers-2.17-157.el7_3.1.x86_64                      32/35 
+  Installing : glibc-devel-2.17-157.el7_3.1.x86_64                        33/35 
+  Installing : gcc-4.8.5-11.el7.x86_64                                    34/35 
+  Installing : kernel-devel-3.10.0-514.6.2.el7.x86_64                     35/35 
+  Verifying  : perl-HTTP-Tiny-0.033-3.el7.noarch                           1/35 
+  Verifying  : perl-threads-shared-1.43-6.el7.x86_64                       2/35 
+  Verifying  : perl-Storable-2.45-3.el7.x86_64                             3/35 
+  Verifying  : perl-threads-1.87-4.el7.x86_64                              4/35 
+  Verifying  : perl-Exporter-5.68-3.el7.noarch                             5/35 
+  Verifying  : perl-constant-1.27-2.el7.noarch                             6/35 
+  Verifying  : perl-PathTools-3.40-5.el7.x86_64                            7/35 
+  Verifying  : cpp-4.8.5-11.el7.x86_64                                     8/35 
+  Verifying  : kernel-devel-3.10.0-514.6.2.el7.x86_64                      9/35 
+  Verifying  : 1:perl-Pod-Escapes-1.04-291.el7.noarch                     10/35 
+  Verifying  : glibc-headers-2.17-157.el7_3.1.x86_64                      11/35 
+  Verifying  : 1:perl-parent-0.225-244.el7.noarch                         12/35 
+  Verifying  : perl-File-Temp-0.23.01-3.el7.noarch                        13/35 
+  Verifying  : 1:perl-Pod-Simple-3.28-4.el7.noarch                        14/35 
+  Verifying  : perl-Time-Local-1.2300-2.el7.noarch                        15/35 
+  Verifying  : perl-Pod-Perldoc-3.20-4.el7.noarch                         16/35 
+  Verifying  : perl-Socket-2.010-4.el7.x86_64                             17/35 
+  Verifying  : glibc-devel-2.17-157.el7_3.1.x86_64                        18/35 
+  Verifying  : kernel-headers-3.10.0-514.16.1.el7.x86_64                  19/35 
+  Verifying  : perl-Carp-1.26-244.el7.noarch                              20/35 
+  Verifying  : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      21/35 
+  Verifying  : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 22/35 
+  Verifying  : libmpc-1.0.1-3.el7.x86_64                                  23/35 
+  Verifying  : 4:perl-libs-5.16.3-291.el7.x86_64                          24/35 
+  Verifying  : 4:perl-macros-5.16.3-291.el7.x86_64                        25/35 
+  Verifying  : perl-Pod-Usage-1.63-3.el7.noarch                           26/35 
+  Verifying  : perl-Encode-2.51-7.el7.x86_64                              27/35 
+  Verifying  : perl-podlators-2.5.1-3.el7.noarch                          28/35 
+  Verifying  : perl-Getopt-Long-2.40-2.el7.noarch                         29/35 
+  Verifying  : perl-File-Path-2.09-2.el7.noarch                           30/35 
+  Verifying  : 4:perl-5.16.3-291.el7.x86_64                               31/35 
+  Verifying  : mpfr-3.1.1-4.el7.x86_64                                    32/35 
+  Verifying  : perl-Filter-1.49-3.el7.x86_64                              33/35 
+  Verifying  : perl-Text-ParseWords-3.29-4.el7.noarch                     34/35 
+  Verifying  : gcc-4.8.5-11.el7.x86_64                                    35/35 
+
+Installed:
+  gcc.x86_64 0:4.8.5-11.el7        kernel-devel.x86_64 0:3.10.0-514.6.2.el7    
+  perl.x86_64 4:5.16.3-291.el7    
+
+Dependency Installed:
+  cpp.x86_64 0:4.8.5-11.el7                                                     
+  glibc-devel.x86_64 0:2.17-157.el7_3.1                                         
+  glibc-headers.x86_64 0:2.17-157.el7_3.1                                       
+  kernel-headers.x86_64 0:3.10.0-514.16.1.el7                                   
+  libmpc.x86_64 0:1.0.1-3.el7                                                   
+  mpfr.x86_64 0:3.1.1-4.el7                                                     
+  perl-Carp.noarch 0:1.26-244.el7                                               
+  perl-Encode.x86_64 0:2.51-7.el7                                               
+  perl-Exporter.noarch 0:5.68-3.el7                                             
+  perl-File-Path.noarch 0:2.09-2.el7                                            
+  perl-File-Temp.noarch 0:0.23.01-3.el7                                         
+  perl-Filter.x86_64 0:1.49-3.el7                                               
+  perl-Getopt-Long.noarch 0:2.40-2.el7                                          
+  perl-HTTP-Tiny.noarch 0:0.033-3.el7                                           
+  perl-PathTools.x86_64 0:3.40-5.el7                                            
+  perl-Pod-Escapes.noarch 1:1.04-291.el7                                        
+  perl-Pod-Perldoc.noarch 0:3.20-4.el7                                          
+  perl-Pod-Simple.noarch 1:3.28-4.el7                                           
+  perl-Pod-Usage.noarch 0:1.63-3.el7                                            
+  perl-Scalar-List-Utils.x86_64 0:1.27-248.el7                                  
+  perl-Socket.x86_64 0:2.010-4.el7                                              
+  perl-Storable.x86_64 0:2.45-3.el7                                             
+  perl-Text-ParseWords.noarch 0:3.29-4.el7                                      
+  perl-Time-HiRes.x86_64 4:1.9725-3.el7                                         
+  perl-Time-Local.noarch 0:1.2300-2.el7                                         
+  perl-constant.noarch 0:1.27-2.el7                                             
+  perl-libs.x86_64 4:5.16.3-291.el7                                             
+  perl-macros.x86_64 4:5.16.3-291.el7                                           
+  perl-parent.noarch 1:0.225-244.el7                                            
+  perl-podlators.noarch 0:2.5.1-3.el7                                           
+  perl-threads.x86_64 0:1.87-4.el7                                              
+  perl-threads-shared.x86_64 0:1.43-6.el7                                       
+
+Complete!
+Copy iso file /usr/share/virtualbox/VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+mount: /dev/loop0 is write-protected, mounting read-only
+Installing Virtualbox Guest Additions 5.1.16 - guest version is unknown
+Verifying archive integrity... All good.
+Uncompressing VirtualBox 5.1.16 Guest Additions for Linux...........
+VirtualBox Guest Additions installer
+Copying additional installer modules ...
+Installing additional modules ...
+vboxadd.sh: Building Guest Additions kernel modules.
+vboxadd.sh: Starting the VirtualBox Guest Additions.
+
+Could not find the X.Org or XFree86 Window System, skipping.
+==> svr: Checking for guest additions in VM...
+==> svr: Setting hostname...
+==> svr: Configuring and enabling network interfaces...
+==> svr: Rsyncing folder: /home/student/workspace/lesson12/ => /vagrant
+==> svr: Running provisioner: shell...
+    svr: Running: /tmp/vagrant-shell20170414-1008-1wf1ne2.sh
+==> svr: Created symlink from /etc/systemd/system/multi-user.target.wants/puppetserver.service to /usr/lib/systemd/system/puppetserver.service.
+==> node1: Importing base box 'centos/7'...
+[KProgress: 20%[KProgress: 40%[KProgress: 70%[KProgress: 90%[K==> node1: Matching MAC address for NAT networking...
+==> node1: Checking if box 'centos/7' is up to date...
+==> node1: A newer version of the box 'centos/7' is available! You currently
+==> node1: have version '1702.01'. The latest is version '1703.01'. Run
+==> node1: `vagrant box update` to update.
+==> node1: Setting the name of the VM: lesson12_node1_1492118981231_84450
+==> node1: Fixed port collision for 22 => 2222. Now on port 2201.
+==> node1: Clearing any previously set network interfaces...
+==> node1: Preparing network interfaces based on configuration...
+    node1: Adapter 1: nat
+    node1: Adapter 2: hostonly
+==> node1: Forwarding ports...
+    node1: 22 (guest) => 2201 (host) (adapter 1)
+==> node1: Running 'pre-boot' VM customizations...
+==> node1: Booting VM...
+==> node1: Waiting for machine to boot. This may take a few minutes...
+    node1: SSH address: 127.0.0.1:2201
+    node1: SSH username: vagrant
+    node1: SSH auth method: private key
+    node1: Warning: Remote connection disconnect. Retrying...
+    node1: Warning: Remote connection disconnect. Retrying...
+    node1: Warning: Remote connection disconnect. Retrying...
+    node1: 
+    node1: Vagrant insecure key detected. Vagrant will automatically replace
+    node1: this with a newly generated keypair for better security.
+    node1: 
+    node1: Inserting generated public key within guest...
+    node1: Removing insecure key from the guest if it's present...
+    node1: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> node1: Machine booted and ready!
+[node1] No installation found.
+Loaded plugins: fastestmirror
+Determining fastest mirrors
+ * base: ftp.byfly.by
+ * extras: ftp.byfly.by
+ * updates: ftp.byfly.by
+Package binutils-2.25.1-22.base.el7.x86_64 already installed and latest version
+Package 1:make-3.82-23.el7.x86_64 already installed and latest version
+Package bzip2-1.0.6-13.el7.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package gcc.x86_64 0:4.8.5-11.el7 will be installed
+--> Processing Dependency: cpp = 4.8.5-11.el7 for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: libmpfr.so.4()(64bit) for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: libmpc.so.3()(64bit) for package: gcc-4.8.5-11.el7.x86_64
+---> Package kernel-devel.x86_64 0:3.10.0-514.6.2.el7 will be installed
+---> Package perl.x86_64 4:5.16.3-291.el7 will be installed
+--> Processing Dependency: perl-libs = 4:5.16.3-291.el7 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Scalar::Util) >= 1.10 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl-macros for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl-libs for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(threads::shared) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(threads) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(constant) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Time::Local) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Time::HiRes) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Storable) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Socket) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Scalar::Util) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Pod::Simple::XHTML) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Pod::Simple::Search) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Getopt::Long) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Filter::Util::Call) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Temp) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec::Unix) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec::Functions) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Path) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Exporter) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Cwd) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Carp) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: libperl.so()(64bit) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Running transaction check
+---> Package cpp.x86_64 0:4.8.5-11.el7 will be installed
+---> Package glibc-devel.x86_64 0:2.17-157.el7_3.1 will be installed
+--> Processing Dependency: glibc-headers = 2.17-157.el7_3.1 for package: glibc-devel-2.17-157.el7_3.1.x86_64
+--> Processing Dependency: glibc-headers for package: glibc-devel-2.17-157.el7_3.1.x86_64
+---> Package libmpc.x86_64 0:1.0.1-3.el7 will be installed
+---> Package mpfr.x86_64 0:3.1.1-4.el7 will be installed
+---> Package perl-Carp.noarch 0:1.26-244.el7 will be installed
+---> Package perl-Exporter.noarch 0:5.68-3.el7 will be installed
+---> Package perl-File-Path.noarch 0:2.09-2.el7 will be installed
+---> Package perl-File-Temp.noarch 0:0.23.01-3.el7 will be installed
+---> Package perl-Filter.x86_64 0:1.49-3.el7 will be installed
+---> Package perl-Getopt-Long.noarch 0:2.40-2.el7 will be installed
+--> Processing Dependency: perl(Pod::Usage) >= 1.14 for package: perl-Getopt-Long-2.40-2.el7.noarch
+--> Processing Dependency: perl(Text::ParseWords) for package: perl-Getopt-Long-2.40-2.el7.noarch
+---> Package perl-PathTools.x86_64 0:3.40-5.el7 will be installed
+---> Package perl-Pod-Simple.noarch 1:3.28-4.el7 will be installed
+--> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+--> Processing Dependency: perl(Encode) for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+---> Package perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 will be installed
+---> Package perl-Socket.x86_64 0:2.010-4.el7 will be installed
+---> Package perl-Storable.x86_64 0:2.45-3.el7 will be installed
+---> Package perl-Time-HiRes.x86_64 4:1.9725-3.el7 will be installed
+---> Package perl-Time-Local.noarch 0:1.2300-2.el7 will be installed
+---> Package perl-constant.noarch 0:1.27-2.el7 will be installed
+---> Package perl-libs.x86_64 4:5.16.3-291.el7 will be installed
+---> Package perl-macros.x86_64 4:5.16.3-291.el7 will be installed
+---> Package perl-threads.x86_64 0:1.87-4.el7 will be installed
+---> Package perl-threads-shared.x86_64 0:1.43-6.el7 will be installed
+--> Running transaction check
+---> Package glibc-headers.x86_64 0:2.17-157.el7_3.1 will be installed
+--> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.17-157.el7_3.1.x86_64
+--> Processing Dependency: kernel-headers for package: glibc-headers-2.17-157.el7_3.1.x86_64
+---> Package perl-Encode.x86_64 0:2.51-7.el7 will be installed
+---> Package perl-Pod-Escapes.noarch 1:1.04-291.el7 will be installed
+---> Package perl-Pod-Usage.noarch 0:1.63-3.el7 will be installed
+--> Processing Dependency: perl(Pod::Text) >= 3.15 for package: perl-Pod-Usage-1.63-3.el7.noarch
+--> Processing Dependency: perl-Pod-Perldoc for package: perl-Pod-Usage-1.63-3.el7.noarch
+---> Package perl-Text-ParseWords.noarch 0:3.29-4.el7 will be installed
+--> Running transaction check
+---> Package kernel-headers.x86_64 0:3.10.0-514.16.1.el7 will be installed
+---> Package perl-Pod-Perldoc.noarch 0:3.20-4.el7 will be installed
+--> Processing Dependency: perl(parent) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+--> Processing Dependency: perl(HTTP::Tiny) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+---> Package perl-podlators.noarch 0:2.5.1-3.el7 will be installed
+--> Running transaction check
+---> Package perl-HTTP-Tiny.noarch 0:0.033-3.el7 will be installed
+---> Package perl-parent.noarch 1:0.225-244.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                   Arch      Version                   Repository  Size
+================================================================================
+Installing:
+ gcc                       x86_64    4.8.5-11.el7              base        16 M
+ kernel-devel              x86_64    3.10.0-514.6.2.el7        updates     13 M
+ perl                      x86_64    4:5.16.3-291.el7          base       8.0 M
+Installing for dependencies:
+ cpp                       x86_64    4.8.5-11.el7              base       5.9 M
+ glibc-devel               x86_64    2.17-157.el7_3.1          updates    1.1 M
+ glibc-headers             x86_64    2.17-157.el7_3.1          updates    668 k
+ kernel-headers            x86_64    3.10.0-514.16.1.el7       updates    4.8 M
+ libmpc                    x86_64    1.0.1-3.el7               base        51 k
+ mpfr                      x86_64    3.1.1-4.el7               base       203 k
+ perl-Carp                 noarch    1.26-244.el7              base        19 k
+ perl-Encode               x86_64    2.51-7.el7                base       1.5 M
+ perl-Exporter             noarch    5.68-3.el7                base        28 k
+ perl-File-Path            noarch    2.09-2.el7                base        26 k
+ perl-File-Temp            noarch    0.23.01-3.el7             base        56 k
+ perl-Filter               x86_64    1.49-3.el7                base        76 k
+ perl-Getopt-Long          noarch    2.40-2.el7                base        56 k
+ perl-HTTP-Tiny            noarch    0.033-3.el7               base        38 k
+ perl-PathTools            x86_64    3.40-5.el7                base        82 k
+ perl-Pod-Escapes          noarch    1:1.04-291.el7            base        51 k
+ perl-Pod-Perldoc          noarch    3.20-4.el7                base        87 k
+ perl-Pod-Simple           noarch    1:3.28-4.el7              base       216 k
+ perl-Pod-Usage            noarch    1.63-3.el7                base        27 k
+ perl-Scalar-List-Utils    x86_64    1.27-248.el7              base        36 k
+ perl-Socket               x86_64    2.010-4.el7               base        49 k
+ perl-Storable             x86_64    2.45-3.el7                base        77 k
+ perl-Text-ParseWords      noarch    3.29-4.el7                base        14 k
+ perl-Time-HiRes           x86_64    4:1.9725-3.el7            base        45 k
+ perl-Time-Local           noarch    1.2300-2.el7              base        24 k
+ perl-constant             noarch    1.27-2.el7                base        19 k
+ perl-libs                 x86_64    4:5.16.3-291.el7          base       688 k
+ perl-macros               x86_64    4:5.16.3-291.el7          base        43 k
+ perl-parent               noarch    1:0.225-244.el7           base        12 k
+ perl-podlators            noarch    2.5.1-3.el7               base       112 k
+ perl-threads              x86_64    1.87-4.el7                base        49 k
+ perl-threads-shared       x86_64    1.43-6.el7                base        39 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages (+32 Dependent packages)
+
+Total download size: 53 M
+Installed size: 130 M
+Downloading packages:
+Public key for glibc-headers-2.17-157.el7_3.1.x86_64.rpm is not installed
+warning: /var/cache/yum/x86_64/7/updates/packages/glibc-headers-2.17-157.el7_3.1.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+Public key for libmpc-1.0.1-3.el7.x86_64.rpm is not installed
+--------------------------------------------------------------------------------
+Total                                              8.2 MB/s |  53 MB  00:06     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+Importing GPG key 0xF4A80EB5:
+ Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+ Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+ Package    : centos-release-7-3.1611.el7.centos.x86_64 (@anaconda)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : mpfr-3.1.1-4.el7.x86_64                                     1/35 
+  Installing : libmpc-1.0.1-3.el7.x86_64                                   2/35 
+  Installing : cpp-4.8.5-11.el7.x86_64                                     3/35 
+  Installing : 1:perl-parent-0.225-244.el7.noarch                          4/35 
+  Installing : perl-HTTP-Tiny-0.033-3.el7.noarch                           5/35 
+  Installing : perl-podlators-2.5.1-3.el7.noarch                           6/35 
+  Installing : perl-Pod-Perldoc-3.20-4.el7.noarch                          7/35 
+  Installing : 1:perl-Pod-Escapes-1.04-291.el7.noarch                      8/35 
+  Installing : perl-Encode-2.51-7.el7.x86_64                               9/35 
+  Installing : perl-Text-ParseWords-3.29-4.el7.noarch                     10/35 
+  Installing : perl-Pod-Usage-1.63-3.el7.noarch                           11/35 
+  Installing : perl-threads-1.87-4.el7.x86_64                             12/35 
+  Installing : perl-Storable-2.45-3.el7.x86_64                            13/35 
+  Installing : perl-Exporter-5.68-3.el7.noarch                            14/35 
+  Installing : perl-constant-1.27-2.el7.noarch                            15/35 
+  Installing : perl-Time-Local-1.2300-2.el7.noarch                        16/35 
+  Installing : perl-Socket-2.010-4.el7.x86_64                             17/35 
+  Installing : perl-Carp-1.26-244.el7.noarch                              18/35 
+  Installing : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      19/35 
+  Installing : perl-threads-shared-1.43-6.el7.x86_64                      20/35 
+  Installing : perl-PathTools-3.40-5.el7.x86_64                           21/35 
+  Installing : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 22/35 
+  Installing : 4:perl-libs-5.16.3-291.el7.x86_64                          23/35 
+  Installing : 4:perl-macros-5.16.3-291.el7.x86_64                        24/35 
+  Installing : 1:perl-Pod-Simple-3.28-4.el7.noarch                        25/35 
+  Installing : perl-File-Temp-0.23.01-3.el7.noarch                        26/35 
+  Installing : perl-File-Path-2.09-2.el7.noarch                           27/35 
+  Installing : perl-Filter-1.49-3.el7.x86_64                              28/35 
+  Installing : perl-Getopt-Long-2.40-2.el7.noarch                         29/35 
+  Installing : 4:perl-5.16.3-291.el7.x86_64                               30/35 
+  Installing : kernel-headers-3.10.0-514.16.1.el7.x86_64                  31/35 
+  Installing : glibc-headers-2.17-157.el7_3.1.x86_64                      32/35 
+  Installing : glibc-devel-2.17-157.el7_3.1.x86_64                        33/35 
+  Installing : gcc-4.8.5-11.el7.x86_64                                    34/35 
+  Installing : kernel-devel-3.10.0-514.6.2.el7.x86_64                     35/35 
+  Verifying  : perl-HTTP-Tiny-0.033-3.el7.noarch                           1/35 
+  Verifying  : perl-threads-shared-1.43-6.el7.x86_64                       2/35 
+  Verifying  : perl-Storable-2.45-3.el7.x86_64                             3/35 
+  Verifying  : perl-threads-1.87-4.el7.x86_64                              4/35 
+  Verifying  : perl-Exporter-5.68-3.el7.noarch                             5/35 
+  Verifying  : perl-constant-1.27-2.el7.noarch                             6/35 
+  Verifying  : perl-PathTools-3.40-5.el7.x86_64                            7/35 
+  Verifying  : cpp-4.8.5-11.el7.x86_64                                     8/35 
+  Verifying  : kernel-devel-3.10.0-514.6.2.el7.x86_64                      9/35 
+  Verifying  : 1:perl-Pod-Escapes-1.04-291.el7.noarch                     10/35 
+  Verifying  : glibc-headers-2.17-157.el7_3.1.x86_64                      11/35 
+  Verifying  : 1:perl-parent-0.225-244.el7.noarch                         12/35 
+  Verifying  : perl-File-Temp-0.23.01-3.el7.noarch                        13/35 
+  Verifying  : 1:perl-Pod-Simple-3.28-4.el7.noarch                        14/35 
+  Verifying  : perl-Time-Local-1.2300-2.el7.noarch                        15/35 
+  Verifying  : perl-Pod-Perldoc-3.20-4.el7.noarch                         16/35 
+  Verifying  : perl-Socket-2.010-4.el7.x86_64                             17/35 
+  Verifying  : glibc-devel-2.17-157.el7_3.1.x86_64                        18/35 
+  Verifying  : kernel-headers-3.10.0-514.16.1.el7.x86_64                  19/35 
+  Verifying  : perl-Carp-1.26-244.el7.noarch                              20/35 
+  Verifying  : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      21/35 
+  Verifying  : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 22/35 
+  Verifying  : libmpc-1.0.1-3.el7.x86_64                                  23/35 
+  Verifying  : 4:perl-libs-5.16.3-291.el7.x86_64                          24/35 
+  Verifying  : 4:perl-macros-5.16.3-291.el7.x86_64                        25/35 
+  Verifying  : perl-Pod-Usage-1.63-3.el7.noarch                           26/35 
+  Verifying  : perl-Encode-2.51-7.el7.x86_64                              27/35 
+  Verifying  : perl-podlators-2.5.1-3.el7.noarch                          28/35 
+  Verifying  : perl-Getopt-Long-2.40-2.el7.noarch                         29/35 
+  Verifying  : perl-File-Path-2.09-2.el7.noarch                           30/35 
+  Verifying  : 4:perl-5.16.3-291.el7.x86_64                               31/35 
+  Verifying  : mpfr-3.1.1-4.el7.x86_64                                    32/35 
+  Verifying  : perl-Filter-1.49-3.el7.x86_64                              33/35 
+  Verifying  : perl-Text-ParseWords-3.29-4.el7.noarch                     34/35 
+  Verifying  : gcc-4.8.5-11.el7.x86_64                                    35/35 
+
+Installed:
+  gcc.x86_64 0:4.8.5-11.el7        kernel-devel.x86_64 0:3.10.0-514.6.2.el7    
+  perl.x86_64 4:5.16.3-291.el7    
+
+Dependency Installed:
+  cpp.x86_64 0:4.8.5-11.el7                                                     
+  glibc-devel.x86_64 0:2.17-157.el7_3.1                                         
+  glibc-headers.x86_64 0:2.17-157.el7_3.1                                       
+  kernel-headers.x86_64 0:3.10.0-514.16.1.el7                                   
+  libmpc.x86_64 0:1.0.1-3.el7                                                   
+  mpfr.x86_64 0:3.1.1-4.el7                                                     
+  perl-Carp.noarch 0:1.26-244.el7                                               
+  perl-Encode.x86_64 0:2.51-7.el7                                               
+  perl-Exporter.noarch 0:5.68-3.el7                                             
+  perl-File-Path.noarch 0:2.09-2.el7                                            
+  perl-File-Temp.noarch 0:0.23.01-3.el7                                         
+  perl-Filter.x86_64 0:1.49-3.el7                                               
+  perl-Getopt-Long.noarch 0:2.40-2.el7                                          
+  perl-HTTP-Tiny.noarch 0:0.033-3.el7                                           
+  perl-PathTools.x86_64 0:3.40-5.el7                                            
+  perl-Pod-Escapes.noarch 1:1.04-291.el7                                        
+  perl-Pod-Perldoc.noarch 0:3.20-4.el7                                          
+  perl-Pod-Simple.noarch 1:3.28-4.el7                                           
+  perl-Pod-Usage.noarch 0:1.63-3.el7                                            
+  perl-Scalar-List-Utils.x86_64 0:1.27-248.el7                                  
+  perl-Socket.x86_64 0:2.010-4.el7                                              
+  perl-Storable.x86_64 0:2.45-3.el7                                             
+  perl-Text-ParseWords.noarch 0:3.29-4.el7                                      
+  perl-Time-HiRes.x86_64 4:1.9725-3.el7                                         
+  perl-Time-Local.noarch 0:1.2300-2.el7                                         
+  perl-constant.noarch 0:1.27-2.el7                                             
+  perl-libs.x86_64 4:5.16.3-291.el7                                             
+  perl-macros.x86_64 4:5.16.3-291.el7                                           
+  perl-parent.noarch 1:0.225-244.el7                                            
+  perl-podlators.noarch 0:2.5.1-3.el7                                           
+  perl-threads.x86_64 0:1.87-4.el7                                              
+  perl-threads-shared.x86_64 0:1.43-6.el7                                       
+
+Complete!
+Copy iso file /usr/share/virtualbox/VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+mount: /dev/loop0 is write-protected, mounting read-only
+Installing Virtualbox Guest Additions 5.1.16 - guest version is unknown
+Verifying archive integrity... All good.
+Uncompressing VirtualBox 5.1.16 Guest Additions for Linux...........
+VirtualBox Guest Additions installer
+Copying additional installer modules ...
+Installing additional modules ...
+vboxadd.sh: Building Guest Additions kernel modules.
+vboxadd.sh: Starting the VirtualBox Guest Additions.
+
+Could not find the X.Org or XFree86 Window System, skipping.
+==> node1: Checking for guest additions in VM...
+==> node1: Setting hostname...
+==> node1: Configuring and enabling network interfaces...
+==> node1: Rsyncing folder: /home/student/workspace/lesson12/ => /vagrant
+==> node1: Running provisioner: shell...
+    node1: Running: /tmp/vagrant-shell20170414-1008-1a4aury.sh
+==> node1: [0;32mInfo: Creating a new SSL key for puppet-node1[0m
+==> node1: [0;32mInfo: Caching certificate for ca[0m
+==> node1: [0;32mInfo: csr_attributes file loading from /etc/puppetlabs/puppet/csr_attributes.yaml[0m
+==> node1: [0;32mInfo: Creating a new SSL certificate request for puppet-node1[0m
+==> node1: [0;32mInfo: Certificate Request fingerprint (SHA256): D0:A4:77:18:41:97:29:3C:14:89:4E:83:4E:5E:FF:DD:2A:08:D7:72:7C:07:21:18:B8:8A:00:FA:53:96:52:70[0m
+==> node1: [0;32mInfo: Caching certificate for puppet-node1[0m
+==> node1: [0;32mInfo: Caching certificate_revocation_list for ca[0m
+==> node1: [0;32mInfo: Caching certificate for ca[0m
+==> node1: [0;32mInfo: Using configured environment 'production'[0m
+==> node1: [0;32mInfo: Retrieving pluginfacts[0m
+==> node1: [0;32mInfo: Retrieving plugin[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/facter_dot_d.rb]/ensure: defined content as '{md5}d71e93183a680ac78bc0389fd50470a0'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/mysql_server_id.rb]/ensure: defined content as '{md5}10de205ca9dc83b68cf63b52d97346ec'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/mysql_version.rb]/ensure: defined content as '{md5}e30648f3d394a1cbdd4e54eb5c28d28c'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/mysqld_version.rb]/ensure: defined content as '{md5}720f447c97dd4ce099006cd5391ade57'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/package_provider.rb]/ensure: defined content as '{md5}539766a71dfb2f65e94a7c91bf413fcf'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/pe_version.rb]/ensure: defined content as '{md5}60d47406026c8201e51394227ddf780d'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/puppet_settings.rb]/ensure: defined content as '{md5}9438c0839ae28dc52fffb8348ae5124f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/root_home.rb]/ensure: defined content as '{md5}35702ae0c7410ec4d2101113e2f697fa'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/service_provider.rb]/ensure: defined content as '{md5}66cc42526eae631e306b397391f1f01c'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/staging_http_get.rb]/ensure: defined content as '{md5}07b6449105e1f314e06f83e37c8d07d3'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/staging_windir.rb]/ensure: defined content as '{md5}8fc9fd906d84f91eed9a90a32f2843b6'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/util]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/util/puppet_settings.rb]/ensure: defined content as '{md5}9f1d2593d0ae56bfca89d4b9266aeee1'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/deprecation.rb]/ensure: defined content as '{md5}59b803eaa15b5a559040497bffc172ae'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_a.rb]/ensure: defined content as '{md5}9dad7f8c9b75348cd97aca986ac0b29a'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_absolute_path.rb]/ensure: defined content as '{md5}96b217f26d06dbac87a2c6a8cfd2d8c8'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_array.rb]/ensure: defined content as '{md5}9292a646010d167417a1936b0b0c17b9'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_bool.rb]/ensure: defined content as '{md5}73957f9efd75ed8a7ab867f9de6da117'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_float.rb]/ensure: defined content as '{md5}af3bd6bb56878bac8cc4fe4f7564e4f9'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_ip_address.rb]/ensure: defined content as '{md5}ee231c66c3e039778bf46702d89815a6'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_ipv4_address.rb]/ensure: defined content as '{md5}900d33249906c4daa02aa79cac896548'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_ipv6_address.rb]/ensure: defined content as '{md5}568fba9af6a83c8b536fafcda82eb448'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_numeric.rb]/ensure: defined content as '{md5}33051800b886cc3b2119826b77c9821a'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_string.rb]/ensure: defined content as '{md5}230e9eabc5c9e1d8d5fb7b3c6c12b300'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/length.rb]/ensure: defined content as '{md5}03cf801867a919f801d290424fd2bb8d'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/type_of.rb]/ensure: defined content as '{md5}bec00841aae556993c926ab298bc81cd'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_absolute_path.rb]/ensure: defined content as '{md5}54a610baa115c7505f1b35976b632a8e'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_array.rb]/ensure: defined content as '{md5}9052b0026da174636c276a2512cf5acc'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_bool.rb]/ensure: defined content as '{md5}fe979e402a5a3a19d013ce84b39ef06a'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_hash.rb]/ensure: defined content as '{md5}92ea8fc21bbbf6cc41f6bb9cfcaefce7'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_integer.rb]/ensure: defined content as '{md5}b0982b68a599262da2c6f2e032bc7713'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_ip_address.rb]/ensure: defined content as '{md5}65a12af9a2c2a9c70d820d04d19ec891'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_ipv4_address.rb]/ensure: defined content as '{md5}4a5039b99ac97cc0447faa343b9f7416'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_ipv6_address.rb]/ensure: defined content as '{md5}fbdf685432416505fed27d5647c26f9c'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_legacy.rb]/ensure: defined content as '{md5}d9f115f30c511cef536a821b94826094'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_numeric.rb]/ensure: defined content as '{md5}41b2cc7335395f617c2bfbeac8f579da'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_re.rb]/ensure: defined content as '{md5}42092f592ebf89b8a504b10c900230d8'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_slength.rb]/ensure: defined content as '{md5}3ae6fcc3f60032c923d06ab3e457b84e'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_string.rb]/ensure: defined content as '{md5}cc967a9d0ea156b2208d1760d7f6e1b2'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/abs.rb]/ensure: defined content as '{md5}a8e46ecf4fb378d314916599651cebe5'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/any2array.rb]/ensure: defined content as '{md5}a81e71d6b67a551d38770ba9a1948a75'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/any2bool.rb]/ensure: defined content as '{md5}8bbb74cb81ebdb164e1965415364080b'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/assert_private.rb]/ensure: defined content as '{md5}cb9cd79ed4e3d647a48467dfb6237d5c'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/base64.rb]/ensure: defined content as '{md5}0d121a32fbfe25b06a4e91b0259af91d'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/basename.rb]/ensure: defined content as '{md5}c61952b3f68fd86408c84fca2c3febb1'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/bool2num.rb]/ensure: defined content as '{md5}01b070b02611fda7e1491de0a8cd89fc'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/bool2str.rb]/ensure: defined content as '{md5}c00885242abf381ba482644ded70b688'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/camelcase.rb]/ensure: defined content as '{md5}bd5da699dfe1ec27ffe91b06187c5900'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/capitalize.rb]/ensure: defined content as '{md5}c94c50b0f147a22861c3b93c724e4343'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/ceiling.rb]/ensure: defined content as '{md5}7de4a96c8bb645fd5ce5c38438667228'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/chomp.rb]/ensure: defined content as '{md5}35a16c85bc59dc285baae631da1ae771'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/chop.rb]/ensure: defined content as '{md5}3beb80906fa3c759945a2664fe510b20'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/clamp.rb]/ensure: defined content as '{md5}6920e6c11b575fc65dadb21220c01a7a'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/concat.rb]/ensure: defined content as '{md5}d10e5428917895d4bb90c638b148b7fa'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/convert_base.rb]/ensure: defined content as '{md5}c3b3e59a49318af98dcb88aed7156629'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/count.rb]/ensure: defined content as '{md5}325bbd89a29e6ed0f31e0462d0a0d301'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/deep_merge.rb]/ensure: defined content as '{md5}d83696855578fb81b64b9e92b9c7cc7c'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/defined_with_params.rb]/ensure: defined content as '{md5}80eed5cedb1b5134e6a1cf44e86ae60a'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/delete.rb]/ensure: defined content as '{md5}7af1540fee4285d93b6b28fb490db70a'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/delete_at.rb]/ensure: defined content as '{md5}a2cba60ac86a676d4ed1ff846a917014'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/delete_regex.rb]/ensure: defined content as '{md5}91cd012ef5a636ffe541814ed232b909'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/delete_undef_values.rb]/ensure: defined content as '{md5}52beef9ee37f84ed2278a69ec4383125'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/delete_values.rb]/ensure: defined content as '{md5}b410f5618b4a6158a921acb7b2dc628d'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/deprecation.rb]/ensure: defined content as '{md5}4323210434d36e37977251f906a232b8'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/difference.rb]/ensure: defined content as '{md5}467e44aeaebd0ee0a51c8b89e3769f1f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/dig.rb]/ensure: defined content as '{md5}1a2a8918f646c13dcb9876a22f9295ab'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/dig44.rb]/ensure: defined content as '{md5}3078b97ee941c261944857373d400ed6'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/dirname.rb]/ensure: defined content as '{md5}8a5579f9a9a13fd737ba65eccf8e6d5a'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/dos2unix.rb]/ensure: defined content as '{md5}be8359a5106a7832be4180e8207dd586'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/downcase.rb]/ensure: defined content as '{md5}02376505a00accd0ce6b148f869c9c86'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/empty.rb]/ensure: defined content as '{md5}6d7d2dde2971f6a40fa913f0af1c610c'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/enclose_ipv6.rb]/ensure: defined content as '{md5}ec39936a9a51dc5cb8ada6eeb829b239'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/ensure_packages.rb]/ensure: defined content as '{md5}0fca8d6dc6608dc16e316fcd39f692b7'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/ensure_resource.rb]/ensure: defined content as '{md5}de703fe63392b939fc2b4392975263de'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/ensure_resources.rb]/ensure: defined content as '{md5}c92d8b69d6354eda24aa3a13d88177b2'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/flatten.rb]/ensure: defined content as '{md5}6a27f5b922a24fec6e823f6f51c98090'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/floor.rb]/ensure: defined content as '{md5}07ba3b1662a14c60fe908b51231355ee'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/fqdn_rand_string.rb]/ensure: defined content as '{md5}9ac5f18e563094aee62ef7586267025d'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/fqdn_rotate.rb]/ensure: defined content as '{md5}2483d17df4e6cb25d92b4e8520f30957'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/fqdn_uuid.rb]/ensure: defined content as '{md5}d357e8837ba2ed8196e926f3697be521'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/get_module_path.rb]/ensure: defined content as '{md5}d4bf50da25c0b98d26b75354fa1bcc45'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/getparam.rb]/ensure: defined content as '{md5}440a9c381b9ad589504e2e9919e83c06'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/getvar.rb]/ensure: defined content as '{md5}0c8c5cef7e158e232a8cf6e42c10d0ff'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/grep.rb]/ensure: defined content as '{md5}c2f2dbdf79d16584579c3a7bc7b5902f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/has_interface_with.rb]/ensure: defined content as '{md5}db65f5aac94e8fe105c7ca0cd1f66403'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/has_ip_address.rb]/ensure: defined content as '{md5}6ce9e6cdfb499b6ce86bf531848a18be'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/has_ip_network.rb]/ensure: defined content as '{md5}3cc7b923fd3cde5062ed9d0eaaa8155f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/has_key.rb]/ensure: defined content as '{md5}7cd9728c38f0b0065f832dabd62b0e7e'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/hash.rb]/ensure: defined content as '{md5}c1ebb21cc5b984153a87c252a9854db2'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/intersection.rb]/ensure: defined content as '{md5}87469eb81ab00bbacfd744165beeaeec'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_absolute_path.rb]/ensure: defined content as '{md5}1ce9a6d1cd0a79087d73cb879ed04542'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_array.rb]/ensure: defined content as '{md5}bbce6768b688bc0f36978ecb0f60f7f4'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_bool.rb]/ensure: defined content as '{md5}b8800ff7a11b4e8c03616041e218225f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_domain_name.rb]/ensure: defined content as '{md5}5c6106c070945a605c5adbd1852f0691'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_email_address.rb]/ensure: defined content as '{md5}1eb786779743e93a7bb9fe8087b38b8d'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_float.rb]/ensure: defined content as '{md5}6257620b98c5099293be7aa4088b88ce'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_function_available.rb]/ensure: defined content as '{md5}f13934d6b41561ef54d88cf0da86231b'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_hash.rb]/ensure: defined content as '{md5}6f1ccf659c41cb5dab4db9fa89f0b364'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_integer.rb]/ensure: defined content as '{md5}a4ae475a5a799c0cc46519e86aed2973'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_ip_address.rb]/ensure: defined content as '{md5}2eabe60c213df2e642a03ebfd4852497'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_ipv4_address.rb]/ensure: defined content as '{md5}ab854b47367921f657410fbe79054f0b'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_ipv6_address.rb]/ensure: defined content as '{md5}2a2be7adbdd5ca23c3e21f00d7d8bac7'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_mac_address.rb]/ensure: defined content as '{md5}1af27510d3b9b936384192a4e1dfbf8c'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_numeric.rb]/ensure: defined content as '{md5}bfd99f39e2506953ad00178db6fa07ea'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_string.rb]/ensure: defined content as '{md5}c1405dd293e9e3c738b83c4ef5aab1ef'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/join.rb]/ensure: defined content as '{md5}2ed4f56d296a4535da142e01b11a126d'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/join_keys_to_values.rb]/ensure: defined content as '{md5}71ad24ac1809739713c461141aedd082'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/keys.rb]/ensure: defined content as '{md5}c10485a3d6c53b6d57a891b9852898de'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/load_module_metadata.rb]/ensure: defined content as '{md5}805c5476a6e7083d133e167129885924'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/loadjson.rb]/ensure: defined content as '{md5}ffecf61ba2ec8011915d37009b1a273e'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/loadyaml.rb]/ensure: defined content as '{md5}668265f14327cba1d1400f2078b7b26b'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/lstrip.rb]/ensure: defined content as '{md5}e9cbd5c2233233940e7344478362fb9f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/max.rb]/ensure: defined content as '{md5}529eb6ac3d88c03caa788167594bd487'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/member.rb]/ensure: defined content as '{md5}03d618926bbb9efd117950e6078c3878'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/merge.rb]/ensure: defined content as '{md5}f3dcc5c83440cdda2036cce69b61a14b'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/min.rb]/ensure: defined content as '{md5}8d829c8a55c9330ab02f962926221d4f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/mysql_deepmerge.rb]/ensure: defined content as '{md5}2b5040ee8cd75a81cf881851e922833a'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/mysql_dirname.rb]/ensure: defined content as '{md5}820ba09a6a0df639da560b41cb31242f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/mysql_password.rb]/ensure: defined content as '{md5}365a0ba55f0d04d0f5d56abcd577ec7d'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/mysql_strip_hash.rb]/ensure: defined content as '{md5}3efe69f1eb189b2913e178b8472aaede'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/num2bool.rb]/ensure: defined content as '{md5}ddb603cf74f92e16a00f1447a4403429'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/parsejson.rb]/ensure: defined content as '{md5}15165fd3807d9f3d657697fa854d643d'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/parseyaml.rb]/ensure: defined content as '{md5}db54578d9d798ced75952217cf11b737'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/pick.rb]/ensure: defined content as '{md5}bf01f13bbfe2318e7f6a302ac7c4433f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/pick_default.rb]/ensure: defined content as '{md5}ad3ea60262de408767786d37a54d45dc'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/prefix.rb]/ensure: defined content as '{md5}ece9341c5b232a25c58545718a54e92f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/private.rb]/ensure: defined content as '{md5}1500a21d5cf19961c5b1d476df892d92'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/pry.rb]/ensure: defined content as '{md5}79a48e45196e4bbf0a3e658781513cf4'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/pw_hash.rb]/ensure: defined content as '{md5}3d540eb4c483cc9c111794ac2d24a4a7'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/range.rb]/ensure: defined content as '{md5}ab19430b6b9737cf56263eb65d80cba1'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/regexpescape.rb]/ensure: defined content as '{md5}6378fdd413237a37c322859877147a50'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/reject.rb]/ensure: defined content as '{md5}689f6a7c961a55fe9dcd240921f4c7f9'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/reverse.rb]/ensure: defined content as '{md5}209e7ef512963251571c515e2d0aee10'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/rstrip.rb]/ensure: defined content as '{md5}f3226709247741825f07d9ec20bd3887'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/scope_defaults.rb]/ensure: defined content as '{md5}398b9a8ed521b8a611536ece0a250b98'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/seeded_rand.rb]/ensure: defined content as '{md5}2ad22e7613d894ae779c0c5b0e65dade'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/shell_escape.rb]/ensure: defined content as '{md5}13662933244e1af42ddca71ced4ac9e5'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/shell_join.rb]/ensure: defined content as '{md5}b99a23d5e62e2e1b98accde5c22e45c9'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/shell_split.rb]/ensure: defined content as '{md5}5317d71f3a7e293624b57aaca23f57d5'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/shuffle.rb]/ensure: defined content as '{md5}6c0555524ebc9ed5dd8295b836fb7163'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/size.rb]/ensure: defined content as '{md5}c171d46b87e377ebcc710ad5a5925a2b'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/sort.rb]/ensure: defined content as '{md5}0b7d1411decc4a92450828809fad0779'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/squeeze.rb]/ensure: defined content as '{md5}403ea46228a8e45e89c91168ed301fb6'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/staging_parse.rb]/ensure: defined content as '{md5}b0cd487f742d5966800dd9ee2d54afc4'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/str2bool.rb]/ensure: defined content as '{md5}ff82f179970a9429614bd37fa7a1ae2a'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/str2saltedsha512.rb]/ensure: defined content as '{md5}457ab12e4329494ae6276cfa4f20eb23'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/strftime.rb]/ensure: defined content as '{md5}8f15e2e3732b6d1d357a1fa1826800d4'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/strip.rb]/ensure: defined content as '{md5}da0ce253cb63a4863f15f9d145217db5'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/suffix.rb]/ensure: defined content as '{md5}1ce493098f17ea47e9435f994adbc6cd'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/swapcase.rb]/ensure: defined content as '{md5}48cad9bf415b5d79584c8e17ab7a06cc'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/time.rb]/ensure: defined content as '{md5}cd96d1f039f8875af083091e3637190b'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/to_bytes.rb]/ensure: defined content as '{md5}45248fd0bba8cfb24eac830fc0add17a'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/try_get_value.rb]/ensure: defined content as '{md5}09cd079ec5f0e5e2ac862c9ebe0f54fe'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/type.rb]/ensure: defined content as '{md5}4709f7ab8a8aad62d77a3c5d91a3aa08'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/type3x.rb]/ensure: defined content as '{md5}5d0391205bd1cfe8de985a44e8c3e8a9'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/union.rb]/ensure: defined content as '{md5}c02fca3fe102875ba020072b7edee532'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/unique.rb]/ensure: defined content as '{md5}0f79a96896149f7034cd85e31eed1e54'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/unix2dos.rb]/ensure: defined content as '{md5}b1f5087fcaca69d9395094204cce887a'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/upcase.rb]/ensure: defined content as '{md5}e875fc4f03adec1ff3b42d22f177441e'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/uriescape.rb]/ensure: defined content as '{md5}ba78def2cd0e60bdc4412df6c7b891ec'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_absolute_path.rb]/ensure: defined content as '{md5}c4b12e101055380386a235cd2c92ad10'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_array.rb]/ensure: defined content as '{md5}bee8327014714d4cd8dbb5c46611f594'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_augeas.rb]/ensure: defined content as '{md5}61e828e7759ba3e1e563e1fdd68aa80f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_bool.rb]/ensure: defined content as '{md5}971700229c4b581f67f6fadc9019eb2c'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_cmd.rb]/ensure: defined content as '{md5}7df12370db442eddddcf4dd7a5364b5e'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_email_address.rb]/ensure: defined content as '{md5}a72656cbfeda622cdd5cfdafdf464095'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_hash.rb]/ensure: defined content as '{md5}c2ae6299148ea200f8dfcf9204875182'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_integer.rb]/ensure: defined content as '{md5}65aa35f7450794aaadb6ad2c2e114df7'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_ip_address.rb]/ensure: defined content as '{md5}b23c3d5ce6839e32d0186411147a6a44'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_ipv4_address.rb]/ensure: defined content as '{md5}593e8f832469cb6a48c5f16ee66c3b2d'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_ipv6_address.rb]/ensure: defined content as '{md5}48d3733012818993eae662839183d139'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_numeric.rb]/ensure: defined content as '{md5}0e36d370262b8bdef2f88f0a3cb5b30e'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_re.rb]/ensure: defined content as '{md5}d5963c404e3ac1670553f306221c2655'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_slength.rb]/ensure: defined content as '{md5}6cbcfe15378ca4a780bac786223aacac'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_string.rb]/ensure: defined content as '{md5}8afa7b0dcfe17bfbbb5704ad54664cc2'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_x509_rsa_key_pair.rb]/ensure: defined content as '{md5}f17427dfc42128dc1df0ab04f37942e5'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/values.rb]/ensure: defined content as '{md5}c35978761496406cc3dafdccaa014236'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/values_at.rb]/ensure: defined content as '{md5}f7e6ad2a1126acd4fb5f7fcf9bfc2e2b'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/zip.rb]/ensure: defined content as '{md5}133f3d4c54640844e656e2e6e790318e'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/file_line]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/file_line/ruby.rb]/ensure: defined content as '{md5}2bfa44964be201698186b94a60a5eb31'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/mysql.rb]/ensure: defined content as '{md5}2696893220da9d341d5826c9e9d4ca19'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/mysql_database]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/mysql_database/mysql.rb]/ensure: defined content as '{md5}5cf9b8044df4ec72a726b5f781c84f8f'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/mysql_datadir]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/mysql_datadir/mysql.rb]/ensure: defined content as '{md5}7c256b40cf96bdafde9c762ab867de80'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/mysql_grant]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/mysql_grant/mysql.rb]/ensure: defined content as '{md5}3630023349a4c8f06932938a26aaa2e6'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/mysql_plugin]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/mysql_plugin/mysql.rb]/ensure: defined content as '{md5}49128d2a9a547c4945735bfd75fd6d6c'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/mysql_user]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/mysql_user/mysql.rb]/ensure: defined content as '{md5}dc09eef4e1d879ffe4ee8eb9a7b3026c'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type]/ensure: created[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/anchor.rb]/ensure: defined content as '{md5}bbd36bb49c3b554f8602d8d3df366c0c'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/file_line.rb]/ensure: defined content as '{md5}d65885f7f0afe49ee199d6bf873a5daf'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/mysql_database.rb]/ensure: defined content as '{md5}438eafbfecc30605462a220d92cf9603'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/mysql_datadir.rb]/ensure: defined content as '{md5}f19e548062e81f424646c193b086aaf6'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/mysql_grant.rb]/ensure: defined content as '{md5}afcc65b0394a23e95b8bf932bc6110b4'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/mysql_plugin.rb]/ensure: defined content as '{md5}0a52cead6c9283c9aa14ea71bdfa80bd'[0m
+==> node1: [mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/mysql_user.rb]/ensure: defined content as '{md5}8cc3c0851c06d01b310a7f551945e696'[0m
+==> node1: [0;32mInfo: Loading facts[0m
+==> node1: [0;32mInfo: Caching catalog for puppet-node1[0m
+==> node1: [0;32mInfo: Applying configuration version '1492119147'[0m
+==> node1: [mNotice: /Stage[main]/Mysql::Server::Config/File[mysql-config-file]/ensure: defined content as '{md5}4b16ed3375eaa96a2bc1b7aa00c5dd46'[0m
+==> node1: [mNotice: /Stage[main]/Mysql::Server::Install/Package[mysql-server]/ensure: created[0m
+==> node1: [mNotice: /Stage[main]/Mysql::Server::Installdb/Mysql_datadir[/var/lib/mysql]/ensure: created[0m
+==> node1: [mNotice: /Stage[main]/Mysql::Server::Service/Service[mysqld]/ensure: ensure changed 'stopped' to 'running'[0m
+==> node1: [0;32mInfo: /Stage[main]/Mysql::Server::Service/Service[mysqld]: Unscheduling refresh on Service[mysqld][0m
+==> node1: [mNotice: /Stage[main]/Mysql::Server::Root_password/Mysql_user[root@localhost]/password_hash: defined 'password_hash' as '*2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19'[0m
+==> node1: [mNotice: /Stage[main]/Mysql::Server::Root_password/File[/root/.my.cnf]/ensure: defined content as '{md5}9910b6aa16e7a0522d2505e472b8cb0c'[0m
+==> node1: [mNotice: /Stage[main]/Main/Node[puppet-node1]/Mysql_database[test_mdb]/ensure: created[0m
+==> node1: [mNotice: /Stage[main]/Main/Node[puppet-node1]/Mysql_user[test_user@localhost]/ensure: created[0m
+==> node1: [mNotice: /Stage[main]/Main/Node[puppet-node1]/Mysql_grant[test_user@localhost/test_mdb.*]/ensure: created[0m
+==> node1: [0;32mInfo: Creating state file /opt/puppetlabs/puppet/cache/state/state.yaml[0m
+==> node1: [mNotice: Applied catalog in 16.20 seconds[0m
